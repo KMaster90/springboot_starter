@@ -14,9 +14,8 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
         HttpMethod[] theUnsupportedActions = {
                 HttpMethod.PUT,
-//                HttpMethod.POST,
+                HttpMethod.POST,
                 HttpMethod.DELETE,
-//                HttpMethod.GET
         };
 
         config
