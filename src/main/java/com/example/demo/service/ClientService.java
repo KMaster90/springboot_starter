@@ -24,14 +24,10 @@ public class ClientService {
         return ClientMapper.INSTANCE.entityToDto(clientFromDb);
     }
 
-    public Client putClient(ClientDto clientDto) {
-        System.out.println("PUT - Client: " + clientDto);
-        Client newClient = new Client() {
-            {
-                setName(clientDto.getName());
-                setId(clientDto.getId());
-            }
-        };
-        return clientRepository.save(newClient);
-    }
+//    public Client putClient(ClientDto clientDto) {
+//        System.out.println("PUT - Client: " + clientDto);
+//        Client newClient = ClientMapper.INSTANCE.dtoToEntity(clientDto);
+//
+//        return clientRepository.save(newClient);
+//    }
 }
